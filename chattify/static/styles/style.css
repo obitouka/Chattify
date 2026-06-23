@@ -765,10 +765,8 @@ a {
 }
 
 .activities__boxContent {
-  margin-left: 4.2rem;
-}
-
-.activities__boxContent {
+  margin-left: 0;
+  margin-top: 1rem;
   font-size: 1.4rem;
 }
 
@@ -781,7 +779,9 @@ a {
   padding: 1rem;
   border-radius: 5px;
   margin-top: 1rem;
-  margin-left: -4.2rem;
+  margin-left: 0;
+  width: 100%;
+  word-break: break-word;
 }
 
 .roomListRoom__actions svg {
@@ -1029,6 +1029,12 @@ a {
   text-decoration: underline;
 }
 
+.room__details {
+  margin: 1.5rem 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
 .room__topics {
   padding: 0.5rem 1.5rem;
   background: var(--color-dark-light);
@@ -1157,4 +1163,16 @@ a {
   font-weight: 500;
   color: var(--color-main);
   font-weight: 1.4rem;
+}
+
+
+/* Mobile Activity Page Fix */
+@media screen and (max-width: 600px) {
+  .layout__body { margin: 1.5rem; }
+  .activities__box { margin: 1rem 0; padding: 1rem; width: 100%; }
+  .activities__boxHeader { display:flex; align-items:flex-start; }
+  .activities__boxHeader .roomListRoom__author { flex:1; min-width:0; }
+  .activities__boxHeader p { word-break: break-word; }
+  .activities__boxContent { margin-left:0; margin-top:1rem; }
+  .activities__boxRoomContent { margin-left:0; width:100%; }
 }
