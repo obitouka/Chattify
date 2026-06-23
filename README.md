@@ -1,4 +1,4 @@
-# Chattify
+# Chattify: Connect with the world
 
 ![Home Page](gitUpload/home.png)
 
