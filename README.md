@@ -11,7 +11,7 @@ Chattify is a room-based discussion and messaging platform built with Django. Us
 ## Features
 
 - User Registration & Authentication
-- User Profiles
+- Custom User Profiles (Avatar & Bio)
 - CURD
 - Topic-Based Discussions
 - Room Messaging System
@@ -19,6 +19,8 @@ Chattify is a room-based discussion and messaging platform built with Django. Us
 - Search Rooms by Topic, Name, or Description
 - Recent Activity Feed
 - REST API with Django REST Framework
+- Authorization & Access Control
+- Image Upload Support
 
 ## Tech Stack
 
